@@ -23,6 +23,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!string && !string2)
 		return (NULL);
 	mf = (unsigned char *)malloc(n);
+    if(!mf)
+        return NULL;
 	ft_memcpy(mf, string2, n);
 	ft_memcpy(string, mf, n);
 	return (dest);
