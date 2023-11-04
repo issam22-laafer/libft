@@ -14,15 +14,23 @@
 
 void	*ft_memset(void *ptr, int value, size_t num)
 {
-	char	*str;
+	unsigned char	*str;
 	size_t	i;
 
 	str = ptr;
 	i = 0;
 	while (i < num)
 	{
-		str[i] = value;
+		str[i] = (unsigned char)value;
 		i++;
 	}
 	return (ptr);
 }
+// int main() {
+//     char arr[] = "issam laafar 1337";
+    
+//     ft_memset(arr, 'A', 3);
+//     printf("Array after using ft_memset: %s\n", arr);
+
+//     return 0;
+// }

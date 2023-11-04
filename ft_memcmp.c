@@ -25,3 +25,10 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 		i++;
 	return (s1[i] - s2[i]);
 }
+// int main()
+// {
+// 	char s1[] = "isgam laafar";
+// 	char s2[] = "issam laafar";
+// 	printf("%d\n",ft_memcmp(s1,s2,3));
+// 	printf("%d\n",memcmp(s1,s2,3));
+// }

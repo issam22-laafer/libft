@@ -29,3 +29,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+// int main()
+// {
+// 	char name[] = "issam laafar";
+// 	printf("%s",(unsigned char *)ft_memchr(name,'j',20));
+// }

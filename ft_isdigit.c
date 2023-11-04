@@ -10,9 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isdigit(int c)
 {
 	if (c < 48 || c > 57)
 		return (0);
 	return (1);
 }
+// int main()
+// {
+// 	char c = '9';
+// 	printf("%d" , ft_isdigit(c));
+// }

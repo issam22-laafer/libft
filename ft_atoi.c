@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *nptr)
 {
 	int	i;
@@ -34,3 +36,9 @@ int	ft_atoi(const char *nptr)
 	}
 	return (r * s);
 }
+// int main()
+// {
+// 	char nbr[] = "	 	 	-+1574b15";
+// 	printf("%d\n", ft_atoi(nbr));
+// 	printf("%d", atoi(nbr));
+// }

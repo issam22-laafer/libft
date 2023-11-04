@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
 	if ((c < 48 || c > 57)
@@ -18,3 +20,8 @@ int	ft_isalnum(int c)
 		return (0);
 	return (1);
 }
+// int main()
+// {
+// 	char c = ' ';
+// 	printf("%d" , ft_isalnum(c));
+// }

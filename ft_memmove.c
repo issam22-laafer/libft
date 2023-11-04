@@ -33,7 +33,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // {
 //     char src[] = "adcdef";
 
-//     ft_memmove(src + 2, src, 3);
+//     ft_memmove(src + 2, src, ft_strlen(src)+1);
 //     printf("After memmove: %s\n", src);
 
 //     return 0;

@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalpha(int c)
 {
 	if ((c < 65 || c > 90) && (c < 97 || c > 122))
@@ -18,3 +20,8 @@ int	ft_isalpha(int c)
 	}
 	return (1);
 }
+// int main()
+// {
+// 	char c = ' ';
+// 	printf("%d" , ft_isalpha(c));
+// }
