@@ -43,3 +43,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[l1] = '\0';
 	return (p);
 }
+// int main()
+// {
+// 	char *s1 = "fdgfdg";
+// 	char *s2 = NULL;
+// 	printf("%s", ft_strjoin(s1,s2));
+// }

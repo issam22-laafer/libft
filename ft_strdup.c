@@ -31,3 +31,8 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+// int main()
+// {
+// 	char t[] = "issam laafar";
+// 	printf("%s\n", ft_strdup(t));
+// }

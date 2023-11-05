@@ -38,3 +38,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (dlen + slen);
 }
+// int main()
+// {
+// 	char	buf[] = "hello world";
+// 	char    buf2[] = "issam";
+
+// 	ft_strlcat(buf, buf2, 10);
+// 	printf("%s\n", buf);
+// }
