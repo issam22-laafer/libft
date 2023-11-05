@@ -29,3 +29,11 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+// int main()
+// {
+// 	char    *str;
+
+//     str = "hello world";
+//     printf("%s\n", ft_strrchr(str, 'G'));
+// 	printf("%s\n", strrchr(str, 'G'));
+// }

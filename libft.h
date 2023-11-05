@@ -14,9 +14,9 @@
 # define LIBFT_H
 
 # include <stdio.h>
-# include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
 
 size_t	ft_strlen(const char *str);
 int		ft_isalnum(int c);

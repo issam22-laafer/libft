@@ -6,7 +6,7 @@
 /*   By: lissam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 10:09:02 by lissam            #+#    #+#             */
-/*   Updated: 2023/11/03 10:22:27 by lissam           ###   ########.fr       */
+/*   Updated: 2023/11/05 16:12:54 by lissam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (str[i] != '\0' && i < len)
 	{
 		j = 0;
-		while (str[i + j] != '\0' && little[j] != '\0'
-			&& str[i + j] == little[j] && i + j < len)
+		while (str[i + j] != '\0' && little[j] != '\0' 
+			&& str[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
 			return (&str[i]);
@@ -38,3 +38,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+// int main() {
+//     const char *big = "Hello, this is a test string for searching.";
+//     const char *little = "testd";
+
+//     char *result = ft_strnstr(big, little, strlen(big));
+
+//     if (result != NULL) {
+//         printf("Substring found at index %ld: %s\n", result - big, result);
+//     } else {
+//         printf("Substring not found.\n");
+//     }
+
+//     return (0);
+// }
