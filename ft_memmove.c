@@ -14,7 +14,6 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*mf;
 	unsigned char		*string;
 	const unsigned char	*string2;
 
@@ -22,11 +21,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	string2 = (unsigned char *)src;
 	if (!string && !string2)
 		return (NULL);
-	mf = (unsigned char *)malloc(n);
-	if (!mf)
-		return (NULL);
-	ft_memcpy(mf, string2, n);
-	ft_memcpy(string, mf, n);
+	if (dest > src)
+	{
+		while (n > 0)
+		{
+			string[n - 1] = string2[n - 1];
+			n--;
+		}
+	}
+	else
+	{
+		ft_memcpy(dest, src, n);
+	}
 	return (dest);
 }
 // int main()

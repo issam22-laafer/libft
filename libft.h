@@ -18,7 +18,7 @@
 # include <string.h>
 # include <unistd.h>
 
-size_t	ft_strlen(const char *str);
+size_t	ft_strlen(const char *s);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
