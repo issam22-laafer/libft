@@ -6,7 +6,7 @@
 /*   By: lissam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:36:55 by lissam            #+#    #+#             */
-/*   Updated: 2023/11/09 12:37:01 by lissam           ###   ########.fr       */
+/*   Updated: 2023/11/09 14:56:56 by lissam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *p;
-	int start;
-	int end;
-	int i;
+	char	*p;
+	int		start;
+	int		end;
+	int		i;
 
 	start = 0;
 	end = ft_strlen(s1);
