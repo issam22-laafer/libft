@@ -40,4 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(p, s1 + start, end - start + 1);
 	return (p);
 }
-
