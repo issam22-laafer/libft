@@ -38,7 +38,7 @@ int	ft_atoi(const char *nptr)
 }
 // int main()
 // {
-// 	char nbr[] = "			 	-+1574b15";
+// 	char nbr[] = "					-+1574b15";
 // 	printf("%d\n", ft_atoi(nbr));
 // 	printf("%d", atoi(nbr));
 // }
