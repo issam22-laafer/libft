@@ -27,3 +27,4 @@ size_t	ft_strlen(const char *str)
 //     str = NULL;
 //     printf("%ld\n", ft_strlen(str));
 // }
+
