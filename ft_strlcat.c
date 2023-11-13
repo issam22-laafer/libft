@@ -38,11 +38,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (dlen + slen);
 }
+
+// dst vnull  siize 0    ->  shouldfdnt serg ffault
 // int main()
 // {
-// 	char	buf[] = "hello world";
-// 	char    buf2[] = "issam";
-
-// 	ft_strlcat(buf, buf2, 10);
-// 	printf("%s\n", buf);
+// 	strlcat(NULL, "src test", 0);
 // }

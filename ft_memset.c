@@ -26,6 +26,15 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
+
+
+// int main()
+// {
+// 	int arr[10] = {10, 23, 89, 78};
+// 	ft_memset(arr, 1, 1);
+// 	printf("%d",arr[0]);
+
+// }
 // int main() {
 //     int arr[] ={15,6,9,8,5,6} ;
 //     ft_memset(arr, 'A', 3);

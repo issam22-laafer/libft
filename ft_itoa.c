@@ -62,12 +62,6 @@ char	*ft_itoa(int n)
 	}
 	p[len] = '\0';
 	fill(p,nb, len);
-	// while (nb)
-	// {
-	// 	p[len - 1] = (nb % 10) + 48;
-	// 	nb = nb / 10;
-	// 	len--;
-	// }
 	return (p);
 }
 // int main(void)

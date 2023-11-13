@@ -6,13 +6,20 @@ CFLAGS = -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
 
+BSRC = ft_lstnew.c
+
+BOBJ = $(BSRC:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
+bonus : $(BOBJ)
+	ar -rc $(NAME) $(BOBJ)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BOBJ)
 
 fclean: clean
 	rm -f $(NAME)
