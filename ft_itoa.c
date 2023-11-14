@@ -6,7 +6,7 @@
 /*   By: lissam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 12:17:17 by lissam            #+#    #+#             */
-/*   Updated: 2023/11/11 15:50:36 by lissam           ###   ########.fr       */
+/*   Updated: 2023/11/14 08:38:51 by lissam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,23 @@ static int	length_int(long int c)
 	}
 	return (i);
 }
-static void fill(char *p,long int nb, int len)
+
+static void	fill(char *p, long int nb, int len)
 {
-    while (nb)
-    {
-        p[len - 1] = (nb % 10) + 48;
-        nb = nb / 10;
-        len--;
-    }
+	while (nb)
+	{
+		p[len - 1] = (nb % 10) + 48;
+		nb = nb / 10;
+		len--;
+	}
 }
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	int		i;
-	char	*p;
-	long int nb;
+	int			len;
+	int			i;
+	char		*p;
+	long int	nb;
 
 	nb = n;
 	len = length_int(nb);
@@ -52,8 +53,8 @@ char	*ft_itoa(int n)
 	if (!p)
 		return (NULL);
 	i = 0;
-    if(nb == 0)
-        p[i] = 48;
+	if (nb == 0)
+		p[i] = 48;
 	if (nb < 0)
 	{
 		p[i] = '-';
@@ -61,7 +62,7 @@ char	*ft_itoa(int n)
 		nb = -nb;
 	}
 	p[len] = '\0';
-	fill(p,nb, len);
+	fill(p, nb, len);
 	return (p);
 }
 // int main(void)

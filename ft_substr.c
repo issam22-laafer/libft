@@ -6,18 +6,17 @@
 /*   By: lissam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 20:51:23 by lissam            #+#    #+#             */
-/*   Updated: 2023/11/03 21:50:36 by lissam           ###   ########.fr       */
+/*   Updated: 2023/11/14 08:21:15 by lissam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-static char *ft_fill(char const *s, unsigned int start, size_t len)
+static char	*ft_fill(char const *s, unsigned int start, size_t len)
 {
-	char *ptr;
-	int i;
-	int j;
+	char	*ptr;
+	int		i;
+	int		j;
 
 	i = start;
 	j = 0;
@@ -34,6 +33,7 @@ static char *ft_fill(char const *s, unsigned int start, size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
@@ -42,18 +42,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j = 0;
 	if (!s)
 		return (NULL);
-	if(len > ft_strlen(s) - start)
+	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;
 	if (ft_strlen(s) <= start)
 	{
-		ptr = malloc(1* sizeof(char));
-		if(!ptr)
-			return NULL;
+		ptr = malloc(1 * sizeof(char));
+		if (!ptr)
+			return (NULL);
 		ptr[j] = '\0';
 		return (ptr);
 	}
-	
-	return (ft_fill(s,start,len));
+	return (ft_fill(s, start, len));
 }
 
 //  "hello"   10   20
