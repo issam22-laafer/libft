@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
 
-BSRC = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
+BSRC = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstadd_front.c
 
 BOBJ = $(BSRC:.c=.o)
 
