@@ -10,8 +10,8 @@ BSRC = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstadd_front.c 
 
 BOBJ = $(BSRC:.c=.o)
 
-# .c.o:
-# 	cc $(CFLAGS) -c $(SRC)
+# %.o : %.c
+# 	cc $(CFLAGS) -c $^
 
 all: $(NAME)
 
@@ -19,6 +19,9 @@ $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
 bonus : $(BOBJ)
+
+$(BOBJ) : $(BSRC)
+	cc $(CFLAGS) -c $(BSRC)
 	ar -rc $(NAME) $(BOBJ)
 
 clean:
