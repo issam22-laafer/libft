@@ -18,6 +18,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
+$(OBJ) : $(SRC)
+	cc $(CFLAGS) -c $(SRC)
+
 bonus : $(BOBJ)
 
 $(BOBJ) : $(BSRC)
