@@ -25,3 +25,8 @@ void	ft_bzero(void *dst, size_t n)
 		i++;
 	}
 }
+// int main()
+// {
+//   char str[] = "hello world";
+//   ft_bzero(str,0);
+// }
