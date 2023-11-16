@@ -17,7 +17,7 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (!s)
+	if (!s || fd == -1)
 		return ;
 	while (s[i] != '\0')
 	{
@@ -30,7 +30,7 @@ void	ft_putendl_fd(char *s, int fd)
 // {
 //     char str[] = "issam laafar";
 //     int fd;
-//     fd = open("issam.txt",O_CREAT | O_WRONLY | O_TRUNC, 0644);
+//     fd = open("endl.txt",O_CREAT | O_WRONLY );
 //     ft_putendl_fd(str,fd);
 //     close(fd);
 // }

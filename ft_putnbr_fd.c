@@ -14,6 +14,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	if (fd == -1)
+		return ;
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else if (n > 9)
@@ -34,7 +36,7 @@ void	ft_putnbr_fd(int n, int fd)
 // int main()
 // {
 //     int fd;
-//     fd = open("issam.txt",O_CREAT | O_WRONLY | O_TRUNC, 0644);
+//     fd = open("putnbr.txt",O_CREAT | O_WRONLY);
 //     ft_putnbr_fd(0,fd);
 //     close(fd);
 // }

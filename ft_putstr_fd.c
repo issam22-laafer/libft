@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (!s)
+	if (!s || fd == -1)
 		return ;
 	while (s[i] != '\0')
 	{
@@ -27,9 +27,9 @@ void	ft_putstr_fd(char *s, int fd)
 }
 // int main()
 // {
-//     char str[] = "issam laafar";
+//     char str[] = "issam 1337";
 //     int fd;
-//     fd = open("issam.txt",O_CREAT | O_WRONLY | O_TRUNC, 0644);
+//     fd = open("putstr.txt",O_CREAT | O_WRONLY);
 //     ft_putstr_fd(str,fd);
 //     close(fd);
 // }

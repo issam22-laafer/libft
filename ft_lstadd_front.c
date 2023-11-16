@@ -20,3 +20,21 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
+// int main()
+// {
+// 	t_list *node = malloc(sizeof(t_list));
+// 	node -> content = "issam";
+// 	node -> next = NULL;
+
+// 	t_list *new = malloc(sizeof(t_list));
+// 	new -> content = "laafar";
+// 	new -> next = NULL;
+// 	ft_lstadd_front(&node,new);
+// 	t_list *tmp;
+// 	tmp = node;
+// 	while(tmp != NULL)
+// 	{
+// 		printf("%s\n", tmp->content);
+// 		tmp = tmp -> next; 
+// 	}
+// }

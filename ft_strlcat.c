@@ -20,12 +20,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	slen;
 
 	i = 0;
-	j = 0;
-	while (dst[j] != '\0')
-	{
-		j++;
-	}
-	dlen = j;
+	j = ft_strlen(dst);
+	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	if (size == 0 || size <= dlen)
 		return (slen + size);
@@ -39,8 +35,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dlen + slen);
 }
 
-// dst vnull  siize 0    ->  shouldfdnt serg ffault
 // int main()
 // {
-// 	strlcat(NULL, "src test", 0);
+// 	ft_strlcat(NULL, "NULL", 0);
 // }

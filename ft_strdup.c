@@ -33,6 +33,5 @@ char	*ft_strdup(const char *s)
 }
 // int main()
 // {
-// 	char t[] = "issam laafar";
-// 	printf("%s\n", ft_strdup(t));
+// 	printf("%s\n", ft_strdup("issam laafar"));
 // }

@@ -25,7 +25,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 // }
 // int main() {
 //     t_list *node = (t_list *)malloc(sizeof(t_list));
-//     node->data = 42;
+//     node->content = strdup("issam");
 //     node->next = NULL;
 //     ft_lstdelone(node, del_int_data);
 //     return 0;

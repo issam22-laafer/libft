@@ -14,12 +14,13 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	if (fd != -1)
+		write(fd, &c, 1);
 }
 // int main()
 // {
 //     int fd;
-//     fd = open("issam.txt",O_WRONLY | O_CREAT | O_TRUNC, 0644);
+//     fd = open("putchar.txt",O_WRONLY | O_CREAT );
 //     ft_putchar_fd('g',fd);
 //     close(fd);
 // }

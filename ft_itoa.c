@@ -67,7 +67,7 @@ char	*ft_itoa(int n)
 }
 // int main(void)
 // {
-//     int a = -2147483648;
+//     int a = 0;
 //     char *result = ft_itoa(a);
 //     if (result)
 //     {
