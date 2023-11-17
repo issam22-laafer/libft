@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static char  *fill_thep(char *p)
+static char	*fill_thep(char *p)
 {
 	p = (char *)malloc(1 * sizeof(char));
 	if (!p)
