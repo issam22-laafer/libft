@@ -28,40 +28,9 @@ void	*ft_memset(void *ptr, int value, size_t num)
 }
 // int main()
 // {
-// 	int arr[10] = {10, 23, 89, 78};
-// 	ft_memset(arr, 1, 1);
+// 	int arr[10] = {0, 0};
+// 	ft_memset(arr, 5, 2);
+// 	ft_memset(arr, 57, 1);
+
 // 	printf("%d",arr[0]);
-// }
-// int main() {
-//     int arr[] ={15,6,9,8,5,6} ;
-//     ft_memset(arr, 'A', 3);
-//     printf("Array after using ft_memset: %s\n", arr);
-//     return (0);
-// }
-// int	main(void)
-// {
-// 	int intArray[5]; 
-// 	intArray[0] = 10;
-// 	intArray[1] = 20;
-// 	intArray[2] = 30;
-// 	intArray[3] = 40;
-// 	intArray[4] = 50;
-// 	printf("Original Array:\n");
-// 	for (int i = 0; i < 5; i++)
-// 	{
-// 		printf("%d ", intArray[i]);
-// 	}
-// 	printf("\n");
-// 	ft_memset(intArray, 0, 8);
-// 	ft_memset(intArray, 7, 6);
-// 	ft_memset(intArray, 232, 5);
-// 	ft_memset(intArray, 0, 4);
-// 	ft_memset(intArray, 10, 1);
-// 	printf("Modified Array:\n");
-// 	for (int i = 0; i < 5; i++)
-// 	{
-// 		printf("%d ", intArray[i]);
-// 	}
-// 	printf("\n");
-// 	return (0);
 // }

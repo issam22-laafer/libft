@@ -25,11 +25,11 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-// int main()
-// {
-// 	char    *str;
+int main()
+{
+	char    *str;
 
-//     str = "hello world";
-//     printf("%s\n", ft_strrchr(str, 'G'));
-// 	printf("%s\n", strrchr(str, 'G'));
-// }
+    str = "hello world\0man";
+    printf("%s\n", ft_strrchr(str, '\0') + 1);
+	printf("%s\n", strrchr(str, '\0') + 1);
+}

@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 	size_t	llen;
 
-	if (!(big || little))
+	if (!big && little && len == 0)
 		return (NULL);
 	llen = ft_strlen(little);
 	i = 0;
@@ -37,16 +37,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 // int main() {
-//     const char *big = "Hello, this is a test string for searching.";
-//     const char *little = "testd";
+//     const char *big = NULL;
+//     const char *little = NULL;
+// 	size_t len = 0;
 
-//     char *result = ft_strnstr(big, little, strlen(big));
-
-//     if (result != NULL) {
-//         printf("Substring found at index %ld: %s\n", result - big, result);
-//     } else {
-//         printf("Substring not found.\n");
-//     }
+// 	printf("ft_strnstr: %s \n", ft_strnstr(big, little, len));
+// 	//printf("strnstr: %s \n", strnstr(big, little, len));
 
 //     return (0);
 // }

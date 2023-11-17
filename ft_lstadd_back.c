@@ -16,13 +16,16 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
 
-	if (*lst == NULL)
+	if (lst)
 	{
-		*lst = new;
-		return ;
+		if (*lst == NULL)
+		{
+			*lst = new;
+			return ;
+		}
+		temp = ft_lstlast(*lst);
+		temp->next = new;
 	}
-	temp = ft_lstlast(*lst);
-	temp->next = new;
 }
 // int main()
 // {
@@ -43,7 +46,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	new -> content = "laafar";
 // 	new -> next = NULL;
 
-// 	ft_lstadd_back(&node,new);
+// 	ft_lstadd_back(NULL,new);
 
 // 	tmp = node;
 // 	while(tmp != NULL)

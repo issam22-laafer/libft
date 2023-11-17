@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	slen;
 
 	i = 0;
+	if (dst == NULL && size == 0)
+		return (ft_strlen(src) + size);
 	j = ft_strlen(dst);
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
@@ -37,5 +39,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 // int main()
 // {
-// 	ft_strlcat(NULL, "NULL", 0);
+// 	printf(" -> %zu\n", ft_strlcat(NULL, NULL, 6));
+// 	printf(" -> %zu\n", strlcat(NULL, NULL, 6));
+// 	// ft_strlcat(NULL, "str", 0);
 // }
