@@ -28,3 +28,33 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = NULL;
 	}
 }
+
+// void del(void *data)
+// {
+// 	free(data);
+// }
+// int main()
+// {
+// 	t_list *head = ft_lstnew(strdup("content1"));
+
+// 	t_list *newback = ft_lstnew(strdup("comtent2"));
+
+// 	t_list *newfront = ft_lstnew(strdup("comtent0"));
+
+// 	ft_lstadd_back(&head,newback);
+
+// 	ft_lstadd_front(&head,newfront);
+
+// 	t_list *tmp;
+// 	tmp = head;
+// 	printf("Size of this linked list is : %d\n",ft_lstsize(head));
+// 	while (tmp != NULL)
+// 	{
+// 		printf("%s\n", tmp->content);
+// 		tmp = tmp->next;
+// 	}
+
+// 	ft_lstclear(&head,del);
+
+// 	printf("%p",head);
+// }

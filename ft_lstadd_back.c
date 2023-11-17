@@ -30,13 +30,21 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	node -> content = "issam";
 // 	node -> next = NULL;
 
+// 	t_list *tmp;
+// 	tmp = node;
+// 	while(tmp != NULL)
+// 	{
+// 		printf("%s\n", tmp->content);
+// 		tmp = tmp -> next;
+// 	}
+
+// 	printf("=========\n");
 // 	t_list *new = malloc(sizeof(t_list));
 // 	new -> content = "laafar";
 // 	new -> next = NULL;
 
 // 	ft_lstadd_back(&node,new);
 
-// 	t_list *tmp;
 // 	tmp = node;
 // 	while(tmp != NULL)
 // 	{
