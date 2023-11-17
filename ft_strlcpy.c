@@ -29,11 +29,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (j);
 }
-int main()
-{
-	char	*buf = NULL;
-	char    *buf2 = NULL;
+// int main()
+// {
+// 	char	*buf = NULL;
+// 	char    *buf2 = NULL;
 
-	strlcpy(buf2, buf, 5);
-	printf("%s\n", buf);
-}
+// 	strlcpy(buf2, buf, 5);
+// 	printf("%s\n", buf);
+// }
