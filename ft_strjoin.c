@@ -33,8 +33,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	l2;
 	char	*p;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (NULL);
+	else if (!s1)
+		return (ft_strdup(s2));
+	else if (!s2)
+		return (ft_strdup(s1));
 	l1 = ft_strlen(s1);
 	l2 = ft_strlen(s2);
 	p = (char *)malloc(sizeof(char) * (l1 + l2 + 1));

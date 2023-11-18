@@ -38,7 +38,7 @@ int	ft_atoi(const char *str)
 }
 // int main()
 // {
-// 	char nbr[] = "";
+// 	char nbr[] = "-101";
 // 	printf("%d\n", ft_atoi(nbr));
 // 	printf("%d", atoi(nbr));
 // }
