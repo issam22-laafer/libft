@@ -36,10 +36,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (dlen + slen);
 }
-
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
-// 	printf(" -> %zu\n", ft_strlcat(NULL, NULL, 6));
-// 	printf(" -> %zu\n", strlcat(NULL, NULL, 6));
+// 	printf(" -> %zu\n", ft_strlcat(NULL, "ff", 0));
+// 	// printf(" -> %zu\n", strlcat(NULL, "ff", 0));
 // 	// ft_strlcat(NULL, "str", 0);
 // }

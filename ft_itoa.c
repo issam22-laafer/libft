@@ -65,14 +65,10 @@ char	*ft_itoa(int n)
 	fill(p, nb, len);
 	return (p);
 }
+// #include <stdio.h>
 // int main(void)
 // {
 //     int a = 0;
-//     char *result = ft_itoa(a);
-//     if (result)
-//     {
-//         printf("the number: %s\n", result);
-//         free(result); // Don't forget to free the allocated memory
-//     }
-//     return 0;
+//     char *result = ft_itoa(-2147483648);
+// 	printf("%s",result);
 // }

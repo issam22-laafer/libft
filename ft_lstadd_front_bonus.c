@@ -20,6 +20,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
+// #include <stdio.h>
 // int main()
 // {
 // 	t_list *node = malloc(sizeof(t_list));

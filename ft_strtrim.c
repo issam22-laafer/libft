@@ -46,6 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(p, s1 + start, end - start + 1);
 	return (p);
 }
+// #include <stdio.h>
 // int main()
 // {
 // 	printf("%s\n", ft_strtrim("1hhhhhhhhh", "1h"));

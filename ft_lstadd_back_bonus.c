@@ -27,6 +27,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp->next = new;
 	}
 }
+// #include <stdio.h>
 // int main()
 // {
 // 	t_list *node = malloc(sizeof(t_list));
@@ -46,7 +47,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	new -> content = "laafar";
 // 	new -> next = NULL;
 
-// 	ft_lstadd_back(NULL,new);
+// 	ft_lstadd_back(&node,new);
 
 // 	tmp = node;
 // 	while(tmp != NULL)

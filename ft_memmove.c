@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*string;
-	const unsigned char	*string2;
+	unsigned char	*string;
+	unsigned char	*string2;
 
 	string = (unsigned char *)dest;
 	string2 = (unsigned char *)src;
@@ -35,6 +35,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
 //     char src[] = "adcdef";

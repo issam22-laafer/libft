@@ -27,9 +27,12 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
 // 	char s1[] = "issam laafar";
-
-// 	printf("%s", ft_strchr(s1, 'j'));
+// 	printf("%s\n", ft_strchr(NULL, 'j'));
+// 	printf("%s", strchr(NULL, 'j'));
 // }

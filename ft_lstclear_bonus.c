@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if (*lst)
+	if (lst)
 	{
 		while ((*lst) != NULL)
 		{
@@ -28,14 +28,17 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = NULL;
 	}
 }
-
+// #include <stdio.h>
+// #include <string.h>
+// #include <stdlib.h>
 // void del(void *data)
 // {
 // 	free(data);
 // }
 // int main()
 // {
-// 	t_list *head = ft_lstnew(strdup("content1"));
+// 	// t_list *head = ft_lstnew(strdup("content1"));
+// 	t_list *head = NULL;
 
 // 	t_list *newback = ft_lstnew(strdup("comtent2"));
 

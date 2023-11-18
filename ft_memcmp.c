@@ -27,6 +27,9 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 		i++;
 	return (s1[i] - s2[i]);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
 //     char s1[] = "isgam laafar";

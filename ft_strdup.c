@@ -31,7 +31,11 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
-// 	printf("%s\n", ft_strdup("issam laafar"));
+// 	printf("%s\n", ft_strdup(NULL));
+// 	printf("%s\n", strdup(NULL));
 // }

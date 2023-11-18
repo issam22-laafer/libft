@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static char	*ft_strcpy(char *dest, const char *src)
+static void	ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 
@@ -23,7 +23,6 @@ static char	*ft_strcpy(char *dest, const char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return (dest);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -53,9 +52,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[l1] = '\0';
 	return (p);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
-// 	char *s1 = "fdgfdg";
-// 	char *s2 = NULL;
+// 	char *s1 = NULL;
+// 	char *s2 =  "issam";
 // 	printf("%s", ft_strjoin(s1,s2));
 // }

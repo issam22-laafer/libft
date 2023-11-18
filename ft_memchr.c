@@ -14,11 +14,11 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*str;
-	unsigned char		cc;
-	size_t				i;
+	unsigned char	*str;
+	unsigned char	cc;
+	size_t			i;
 
-	str = (const unsigned char *)s;
+	str = (unsigned char *)s;
 	cc = (unsigned char)c;
 	i = 0;
 	while (i < n)
@@ -29,8 +29,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+// #include <stdio.h>
+// #include <string.h>
 // int main()
 // {
-// 	// char name[] = "issam laafar";
-// 	printf("%s",(unsigned char *)ft_memchr(NULL,'m',10));
+// 	char name[] = "issam laafar";
+// 	printf("%s\n",ft_memchr(name,'j',10));
+// 	printf("%s",memchr(name,'j',10));
 // }

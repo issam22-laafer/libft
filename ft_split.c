@@ -19,7 +19,7 @@ static int	ft_count_w(char const *str, char c)
 
 	i = 0;
 	count = 0;
-	while (str[i] != '\0')
+	while (str && str[i] != '\0')
 	{
 		if (str[i] != c)
 		{
@@ -55,7 +55,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	n = 0;
-	while (s[i] != '\0')
+	while (s && s[i] != '\0')
 	{
 		while (s[i] == c)
 			i++;
@@ -71,14 +71,11 @@ char	**ft_split(char const *s, char c)
 	ptr[n] = NULL;
 	return (ptr);
 }
+//  #include <stdio.h>
 //  int main()
 //  {
 //      char str[] = "  issam laafar    1337       d ";
-//      char **res = ft_split(str,' ');
-//      int i = 0;
-//      while (i < ft_count_w(str,' '))
-//      {
-//          printf("%s\n",res[i]);
-//          i++;
-//          }
+// 	 char c = ' ';
+//      char **res = ft_split(str,c);
+// 	 printf("res: %s",  res[1]);
 // }

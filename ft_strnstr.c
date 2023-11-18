@@ -36,13 +36,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+// #include <stdio.h>
+// #include <string.h>
 // int main() {
-//     const char *big = NULL;
-//     const char *little = NULL;
-// 	size_t len = 0;
 
-// 	printf("ft_strnstr: %s \n", ft_strnstr(big, little, len));
-// 	//printf("strnstr: %s \n", strnstr(big, little, len));
+// 	printf("ft_strnstr: %s \n", strnstr("issam","hh",1));
 
 //     return (0);
 // }
