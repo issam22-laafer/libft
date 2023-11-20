@@ -57,7 +57,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // #include <string.h>
 // int main()
 // {
-// 	char *s1 = NULL;
-// 	char *s2 =  "issam";
+// 	char *s1 = "NULL";
+// 	char *s2 =  NULL;
 // 	printf("%s", ft_strjoin(s1,s2));
 // }

@@ -33,6 +33,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	p[i] = '\0';
 	return (p);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
 // char fupeer(unsigned int i, char c)
 // {
 //     if(c >= 97 && c <= 122)

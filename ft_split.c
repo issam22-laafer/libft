@@ -74,8 +74,7 @@ char	**ft_split(char const *s, char c)
 //  #include <stdio.h>
 //  int main()
 //  {
-//      char str[] = "  issam laafar    1337       d ";
-// 	 char c = ' ';
-//      char **res = ft_split(str,c);
-// 	 printf("res: %s",  res[1]);
+//      char **res = ft_split("hello", '+');
+// 	 for (int i = 0; res[i]; i++)
+// 	 	printf("res: %s\n",  res[i]);
 // }

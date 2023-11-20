@@ -6,7 +6,7 @@
 /*   By: lissam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 12:17:17 by lissam            #+#    #+#             */
-/*   Updated: 2023/11/14 08:38:51 by lissam           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:25:06 by lissam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,10 @@ char	*ft_itoa(int n)
 	fill(p, nb, len);
 	return (p);
 }
-// #include <stdio.h>
-// int main(void)
-// {
-//     int a = 0;
-//     char *result = ft_itoa(-2147483648);
-// 	printf("%s",result);
-// }
+ #include <stdio.h>
+ int main(void)
+ {
+     int a = 0;
+     char *result = ft_itoa(-2147483648);
+ 	printf("%s",result);
+ }

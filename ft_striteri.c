@@ -36,6 +36,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 // int main()
 // {
 //     char str[] = "issam laafar";
-//     ft_striteri(NULL,NULL);
+//     ft_striteri(str,fupeer);
 //     printf("%s",str);
 // }

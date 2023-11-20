@@ -26,13 +26,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (NULL);
 }
-// int main()
-// {
-// 	size_t size = SIZE_MAX, count = SIZE_MAX;
-// 	void *res = ft_calloc(size, count);
-// 	void *r = calloc(size, count);
-// 	if (res == r)
-// 		 printf("Well Done!\n");
-// 	else
-// 		printf("OHO\n");
-// }

@@ -26,11 +26,12 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 // int main()
 // {
-// 	int arr[10] = {0, 0};
-// 	ft_memset(arr, 5, 2);
-// 	ft_memset(arr, 57, 1);
-
-// 	printf("%d",arr[0]);
+// 	char str[] = "abcdefjhi";
+// 	char c = 'h';
+// 	printf("%s",memset(str,'l',5));
 // }

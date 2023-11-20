@@ -14,13 +14,12 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (fd != -1)
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }
 // int main()
 // {
 //     int fd;
-//     fd = open("putchar.txt",O_WRONLY | O_CREAT );
-//     ft_putchar_fd('g',fd);
-//     close(fd);
+//     // fd = open("putchar.txt",O_WRONLY | O_CREAT );
+// 	ft_putchar_fd('h', -1);
+//     // close(fd);
 // }

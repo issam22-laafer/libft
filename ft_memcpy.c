@@ -39,6 +39,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // {
 //     char s1[] = "abcdefghijklmno";
 //     char s2[] = "ghijklmno";
-//     printf("%s\n",(char *)ft_memcpy(s1,s2,5));
-//     printf("%s\n",(char *)memcpy(s1 ,s2,5));
+//     printf("%s\n",(char *)ft_memcpy(s2,s2,5));
+//     printf("%s\n",(char *)memcpy(s2 ,s2,5));
 // }

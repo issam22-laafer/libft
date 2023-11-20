@@ -55,7 +55,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (ft_fill(s, start, len));
 }
 
-//  "hello"   10   20
+// #include <stdlib.h>
+// #include <stdio.h>
 // int main()
 // {
 // 	char    *str;
